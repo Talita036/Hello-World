@@ -1,0 +1,156 @@
+body {
+    font-family: nunito,sans-serif;
+    color: #1c1c1c
+}
+
+h1,h2,h3 {
+    font-family: asap, sans-serif;
+    color: #000000;
+}
+.botao {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #ee34c6;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: violet;
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: Yellowtail, serif;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../Images/marilia-mendonca-de-coroa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 200px;
+}
+
+header p {
+    margin-bottom: 2em;
+}
+
+#Biografia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 50px 50px 50px;
+    background-color: rgb(238, 131, 238);
+    color: #ffffff;
+}
+
+#Biografia h2 {
+    color:#ffffff;
+}
+#Biografia p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+#Sobre .botao {
+background-color: rgb(238, 131, 238);
+color: #1c1c1c;
+}
+#Fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#Fotos h3 {
+    margin-bottom: 10px;
+}
+
+#Fotos img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding:10px;
+    background-color: rgb(238, 131, 238);
+    color: #ffffff;
+}
+
+footer a {
+    text-decoration: none;
+    color: #0ff;
+}
+@media screen and (min-width:768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+    #Biografia {
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+    #Fotos {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    #Fotos h3 {
+        width: 100%;
+        text-align: center;
+    }
+    #Fotos div{
+        padding:0 10px;
+        flex-grow:1;
+        flex-basis: 150px
+        
+    }
+    
+    #Fotos img {
+        width: 33.3333333%;
+    }
+}
